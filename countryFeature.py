@@ -17,9 +17,9 @@ def countryJewishCommunities():
         if calgarySelect == "LITHUANIA":
             print("History: Majority of the Jews come from Germany after WW2")
             print("Traditional Dishes: Berches and Liptauer")
-            print("Customs: Ashkenazi")
+            print("Customs: Ashkenazi customs")
             print("Music: Folk Music")
-            print("Language: Lithuanian, and Yidish")
+            print("Language: Lithuanian and Yidish")
             print("Chabad: Chabad Lubavitch of Lithuania, Šv. Kazimiero g. 12, Vilnius, 01126 Lithuania, 370-615-83814")
             running = False
         else:
