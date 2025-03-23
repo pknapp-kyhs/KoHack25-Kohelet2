@@ -27,6 +27,6 @@ for i in locations:
             for innerkey, innervalue in i["info"].items():
                 print (innerkey, innervalue)
             
-        #else: 
-            #print("We don't have information on that, try again")
-            #break
+        else: 
+            print("We don't have information on that, try again")
+            exit()
