@@ -21,6 +21,7 @@ def read_json_to_dict(file_path):
         print(f"Error: Invalid JSON format in {file_path}")
         return None
 
+
 # Example usage:
 file_path = 'backroundinfo.json'
 data_dict = read_json_to_dict(file_path)
@@ -34,6 +35,11 @@ def notify(data):
     #This is when you input your location  
     user_location = input ("Where are you?")
     print ("You are in ", user_location)
+    if (user_location == "Lithuania"):
+        print("Happenings-  Community Bible Studies and Purim Party")
+    if (user_location == "Calgary"):
+        print("Happenings- Walk for Israel 3/25/25")
+    
 
     # Once you put in your location this will give you information based on where you are
     for i in data: #looping through list
