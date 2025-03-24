@@ -16,7 +16,7 @@ class InteractiveCommentSystem:
                 print(f"{idx}. {comment['username']} - {comment['text']} ({comment['timestamp']})")
         print("========================\n")
 
-# This is the part of the code
+# This is the part of the code that gives all the features of how to make 
     def add_comment(self):
         """Allows the user to enter a comment dynamically."""
         username = input("Enter your name: ").strip()
