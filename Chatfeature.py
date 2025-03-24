@@ -1,4 +1,4 @@
-# This is supposed to timestamp the comments
+# This is supposed to timestamp the comments.
 import time
 
 # Stores comments as a list of dictionaries
