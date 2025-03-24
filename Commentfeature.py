@@ -38,7 +38,10 @@ class InteractiveCommentSystem:
 
         self.comments.append(comment)
         print("\n✅ Comment added successfully!\n")
-        self.display_comments()  # Show updated comments in real time
+        self.display_comments()  # Shows updated comments in real time
+
+
+
 # This code provides all the other features the chat feature can do: ie view comments, and exit the system
     def start(self):
         """Runs the interactive comment system."""
