@@ -25,32 +25,9 @@ def read_json_to_dict(file_path):
 file_path = 'backroundinfo.json'
 data_dict = read_json_to_dict(file_path)
 
-if data_dict:
-    print("JSON data as dictionary:")
-    print(data_dict)
-
-
-# This holds all the information that will be reported based on your location 
-locations = [
-    {"name":"Calgary",
-     "info": {
-     "History-": "The Majority of the Jews in Calgary come from Russian Origins.",
-     "Dishes-":"Borsht and Smoked fish.",
-     "Customs-": "Generally Ashkenazi,the community custom is to visit the graves of family members before Yom Kippur",
-     "Music-": "Folk Music",
-     "Language-": "English",
-     "Chabad-":"Chabad Lubavitch of Alberta:134, Forge, Rd, SE, Calgary, AB T2H 0S8, Canada,+1(403)-281-3770",
-     "Current Events-": "Walk with Israel"}},
-    {"name":"Lithuania",
-     "info": {
-     "History-": "Majority of the Jews come from Germany after WW2",
-     "Dishes-":"Berches and Liptauer",
-     "Customs-": "Ashkenazi customs",
-     "Music-": "Folk Music",
-     "Language-": "Lithuanian and Yidish",
-     "Chabad-":"Chabad Lubavitch of Lithuania, Šv. Kazimiero g. 12, Vilnius, 01126 Lithuania, 370-615-83814",
-     "Current Events-": "Bible Studies at Chabad"}}
-    ]
+#if data_dict:
+    #print("JSON data as dictionary:")
+    #print(data_dict)
 
 #This is when you input your location  
 user_location = input ("Where are you?")
