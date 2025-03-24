@@ -30,3 +30,4 @@ for i in locations:
         else: 
             print("We don't have information on that, try again")
             exit()
+

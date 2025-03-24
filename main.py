@@ -1,9 +1,5 @@
 def onCountryPress(country):
-    
-
-
-
-import sqlite3
+    import sqlite3
 
 # 1. Create or connect to the database
 conn = sqlite3.connect('my_database.db')
