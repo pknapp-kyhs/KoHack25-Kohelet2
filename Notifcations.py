@@ -1,3 +1,4 @@
+# This holds all the information that will be reported based on your location 
 locations = [
     {"name":"Calgary",
      "info": {
@@ -18,20 +19,23 @@ locations = [
      "Chabad-":"Chabad Lubavitch of Lithuania, Šv. Kazimiero g. 12, Vilnius, 01126 Lithuania, 370-615-83814",
      "Current Events-": "Bible Studies at Chabad"}}
     ]
+
+#This is when you input your location  
 user_location = input ("Where are you?")
 print ("You are in ", user_location)
 
-
-for i in locations: 
-    for key, value in i.items():
-        print (key, value)
+# Once you put in your location this will give you information based on where you are
+for i in locations: #looping through list
+    for key, value in i.items(): #looping through top dict
+        #print (key, value)
         if key == "name" and value==user_location:
             for innerkey, innervalue in i["info"].items():
                 print (innerkey, innervalue)
             exit()
             
-        else: 
-            print("We don't have information on that, try again")
+        #else: 
+print("We don't have information on that, try again")
+            
 
             
 
