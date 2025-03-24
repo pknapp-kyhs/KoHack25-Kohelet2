@@ -1,8 +1,5 @@
 import json
 import os
-# running= True
-
-
 
 # This function pulls out the history and details of the Jewish communities in the location wanted
 def countryJewishCommunities():
