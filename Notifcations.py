@@ -29,22 +29,32 @@ data_dict = read_json_to_dict(file_path)
     #print("JSON data as dictionary:")
     #print(data_dict)
 
-#This is when you input your location  
-user_location = input ("Where are you?")
-print ("You are in ", user_location)
 
-# Once you put in your location this will give you information based on where you are
-for i in data_dict: #looping through list
-    for key, value in i.items(): #looping through top dict
-        #print (key, value)
-        if key == user_location:
-            for innerkey, innervalue in i[key].items():
-                #print (innerkey, innervalue)
-                print (f"{innerkey} - {innervalue}")
-            exit()
+def notify(data):
+    #This is when you input your location  
+    user_location = input ("Where are you?")
+    print ("You are in ", user_location)
+
+    # Once you put in your location this will give you information based on where you are
+    for i in data: #looping through list
+        for key, value in i.items(): #looping through top dict
+            #print (key, value)
+            if key == user_location:
+                for innerkey, innervalue in i[key].items():
+                    #print (innerkey, innervalue)
+                    print (f"{innerkey} - {innervalue}")
+                repeat=input("try again? y or n")
+                if (repeat=="y"):
+                    notify(data)
+                else:
+                    exit()
             
-        #else: 
-print("We don't have information on that, try again")
+            #else: 
+    print("We don't have information on that, try again")
+    notify(data)
+
+
+notify(data_dict)
             
 
             
