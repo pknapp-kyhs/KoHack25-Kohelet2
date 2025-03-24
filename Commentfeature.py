@@ -1,10 +1,12 @@
-
+# we used open AI to asssist us in this code
+#  This is supposed to timestamp the comments
 import time
 
+# Stores comments as a list of dictionaries
 class InteractiveCommentSystem:
     def __init__(self):
-        self.comments = []  # Stores comments as a list of dictionaries
-
+        self.comments = []  
+# This is the function for the questions the code asks the user
     def display_comments(self):
         """Displays all comments in real time."""
         print("\n=== Comment Section ===")
@@ -15,6 +17,7 @@ class InteractiveCommentSystem:
                 print(f"{idx}. {comment['username']} - {comment['text']} ({comment['timestamp']})")
         print("========================\n")
 
+# This is the part of the code that gives all the steps for how to produce a comment
     def add_comment(self):
         """Allows the user to enter a comment dynamically."""
         username = input("Enter your name: ").strip()
@@ -36,7 +39,7 @@ class InteractiveCommentSystem:
         self.comments.append(comment)
         print("\n✅ Comment added successfully!\n")
         self.display_comments()  # Show updated comments in real time
-
+# This code provides all the other features the chat feature can do: ie view comments, and exit the system
     def start(self):
         """Runs the interactive comment system."""
         print("💬 Welcome to the Interactive Comment System!")
